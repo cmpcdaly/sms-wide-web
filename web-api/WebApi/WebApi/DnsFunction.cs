@@ -15,13 +15,19 @@ namespace WebApi
         [FunctionName("DnsFunction")]
         public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequest req, TraceWriter log)
         {
-            log.Info("C# HTTP trigger function processed a request.");
-
+            // 1. Get the request model
             var clockworkHook = ClockworkHookRequest.FromQueryString(req.Query);
 
-            return clockworkHook.Content != null
-                ? (ActionResult)new OkObjectResult(clockworkHook.Content)
-                : new BadRequestObjectResult("Content not provided");
+            // 2. Decode the DNS Request
+            // The DNS lookup path is in the clockworkHook message
+            var path = clockworkHook.Content;
+
+            if (path == "info.cern.ch")
+            {
+                return null;
+            }
+
+            return new StatusCodeResult(200);
         }
     }
 }
