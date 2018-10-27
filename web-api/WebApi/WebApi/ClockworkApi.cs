@@ -14,9 +14,9 @@ namespace WebApi
 
         private readonly string _key;
 
-        public ClockworkApi(string key)
+        public ClockworkApi()
         {
-            _key = key;
+            _key = Environment.GetEnvironmentVariable("ClockworkKey");
         }
 
         public async Task SendMessage(string to, string content)

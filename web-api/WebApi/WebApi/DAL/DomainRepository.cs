@@ -6,6 +6,11 @@ namespace WebApi.DAL
 {
     public class DomainRepository
     {
+        public DomainRepository()
+        {
+            var tableStorageConnStr = Environment.GetEnvironmentVariable("TableStorage");
+        }
+
         public bool Register(string domain, string number)
         {
             throw new NotImplementedException();
