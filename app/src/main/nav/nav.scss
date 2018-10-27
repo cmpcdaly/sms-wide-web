@@ -1,0 +1,20 @@
+sww-nav {
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+
+  a {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    display: block;
+    flex: 1;
+    text-align: center;
+    padding: 1em 0;
+
+    &:first-child {
+      border-left: 0;
+    }
+  }
+}

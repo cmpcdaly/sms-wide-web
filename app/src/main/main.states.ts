@@ -7,18 +7,21 @@ export const MainState: Ng1StateDeclaration = {
 };
 
 export const SettingsState: Ng1StateDeclaration = {
+  parent: 'main',
   name: 'settings',
   url: '/settings',
   component: 'settings'
 };
 
 export const ClientState: Ng1StateDeclaration = {
+  parent: 'main',
   name: 'client',
   url: '/client',
   component: 'client'
 };
 
 export const ServerState: Ng1StateDeclaration = {
+  parent: 'main',
   name: 'server',
   url: '/server',
   component: 'server'

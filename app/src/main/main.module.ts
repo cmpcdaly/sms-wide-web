@@ -6,6 +6,7 @@ import { MainComponent } from 'main/main.component';
 import { ServerComponent } from 'server/server.component';
 import { SettingsComponent } from 'settings/settings.component';
 import { ClientState, MainState, ServerState, SettingsState } from './main.states';
+import { NavComponent } from './nav/nav.component';
 import { RouterConfig } from './router.config';
 
 const MAIN_MODULE_DEPENDENCIES = [
@@ -18,6 +19,8 @@ export const MAIN_MODULE = module('smsww', MAIN_MODULE_DEPENDENCIES)
   .component('client', ClientComponent)
   .component('server', ServerComponent)
   .config(RouterConfig)
+
+  .component('swwNav', NavComponent)
 
   .config(($stateRegistryProvider: StateRegistry) => {
     'ngInject';
