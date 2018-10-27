@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Common", "WebApi.Common\WebApi.Common.csproj", "{1ED95BB1-1C42-4DA1-83FC-C6CE89209F22}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{B6999CEB-3EB9-4377-8FA9-2038CEAC2D68}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1ED95BB1-1C42-4DA1-83FC-C6CE89209F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1ED95BB1-1C42-4DA1-83FC-C6CE89209F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1ED95BB1-1C42-4DA1-83FC-C6CE89209F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1ED95BB1-1C42-4DA1-83FC-C6CE89209F22}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B6999CEB-3EB9-4377-8FA9-2038CEAC2D68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B6999CEB-3EB9-4377-8FA9-2038CEAC2D68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6999CEB-3EB9-4377-8FA9-2038CEAC2D68}.Release|Any CPU.ActiveCfg = Release|Any CPU
